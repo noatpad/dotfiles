@@ -53,8 +53,8 @@ npm i -g trash-cli
 npm i -g vercel
 
 # Restore mackup settings
+ln -svf ~/.dotfiles/mackup.cfg ~/.mackup.cfg
 mackup restore
 
-# Link dotfiles
+# Link zshrc
 ln -svf ~/.dotfiles/zsh/zshrc ~/.zshrc
-ln -svf ~/.dotfiles/mackup.cfg ~/.mackup.cfg
