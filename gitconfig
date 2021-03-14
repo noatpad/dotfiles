@@ -1,2 +1,6 @@
 [alias]
-adog = log --all --decorate --oneline --graph
+	adog = log --all --decorate --oneline --graph
+
+[user]
+	name = Danny Hernandez
+	email = tamdannyhdz@gmail.com
