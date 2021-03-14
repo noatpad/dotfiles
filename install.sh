@@ -56,5 +56,6 @@ npm i -g vercel
 ln -svf ~/.dotfiles/mackup.cfg ~/.mackup.cfg
 mackup restore
 
-# Link zshrc
+# Link and copy dotfiles
+cp ~/.dotfiles/gitconfig ~/.gitconfig
 ln -svf ~/.dotfiles/zsh/zshrc ~/.zshrc
