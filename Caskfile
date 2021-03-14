@@ -1,0 +1,100 @@
+tap "homebrew/cask-fonts"
+
+cask "font-hack-nerd-font"
+cask "qlcolorcode"
+cask "qlstephen"
+cask "xquartz"
+
+cask "1password"
+cask "8bitdo-ultimate-software"
+cask "aerial"
+# cask "alfred"
+cask "appcleaner"
+cask "google-photos-backup-and-sync"
+cask "bartender"
+cask "bitwarden"
+# cask "boom-3d"
+cask "cheatsheet"
+cask "checkra1n"
+cask "discord"
+cask "dockey"
+cask "dolphin"
+cask "enjoyable"
+cask "etrecheckpro"
+# cask "fantastical"
+cask "firefox"
+cask "flux"
+cask "google-chrome"
+cask "iterm2"
+cask "itunesdiscordrp"
+cask "kap"
+cask "kdiff3"
+cask "keycastr"
+# cask "loopback"
+cask "love"
+cask "meteorologist"
+cask "minecraft"
+cask "mongodb-compass"
+cask "multimc"
+cask "notion"
+cask "nxengine"
+cask "obs"
+cask "obsidian"
+cask "openemu"
+cask "opentoonz"
+cask "parsec"
+# cask "path-finder"
+cask "postman"
+cask "securesafe"
+cask "sf-symbols"
+cask "slack"
+# cask "soulver"
+cask "steam"
+cask "streamlabs-obs"
+cask "surfshark"
+cask "trailer"
+cask "ubersicht"
+cask "visual-studio-code"
+cask "vlc"
+cask "wwdc"
+cask "zoom"
+
+# - Missing apps:
+# Audacity
+# BandagedBD
+# Clip Studio (and Clip Studio Paint)
+# CZUR Scanner
+# DaVinci Resolve
+# Desktop Goose
+# Drawpile
+# Feeds (or any RSS feed reader)
+# Filezilla
+# GameMaker Studio
+# Microsoft Office
+# Pureref
+# SanicBall
+# Sonic Robo Blast 2 Kart
+# Tayasui Sketches Pro
+
+mas "Amphetamine", id: 937984704
+mas "Clocker", id: 1056643111
+mas "ColorSlurp", id: 1287239339
+mas "CotEditor", id: 1024640650
+mas "Debit & Credit", id: 882637653
+mas "Disk Cleaner", id: 965709265
+mas "Friendly Streaming", id: 553245401
+mas "GarageBand", id: 682658836
+mas "Gifski", id: 1351639930
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Magnet", id: 441258766
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Parcel", id: 639968404
+mas "RunCat", id: 1429033973
+mas "SketchBook", id: 863486266
+mas "Spark – Email App by Readdle", id: 1176895641
+mas "Syntra Small", id: 1094640838
+mas "The Unarchiver", id: 425424353
+mas "Tot", id: 1491071483
+mas "Twitter", id: 1482454543

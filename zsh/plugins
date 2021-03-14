@@ -1,0 +1,11 @@
+plugins=(
+	alias-tips
+	colored-man-pages
+	hacker-quotes
+	httpie
+	last-working-dir
+	nvm
+	vscode
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+)

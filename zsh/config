@@ -1,0 +1,20 @@
+# PATH
+export PATH="/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/sbin:/opt/local/bin"
+# export PATH="$PATH:~/mongodb-osx-x86_64-enterprise-4.0.6/bin"
+
+# Environment
+export EDITOR="/usr/local/bin/micro"
+export VISUAL="/usr/local/bin/micro"
+export STARSHIP_CONFIG="~/.starship"
+
+# List contents whenever you change directory
+function chpwd() { exa -G --icons --group-directories-first }
+
+# Zoxide
+eval "$(zoxide init zsh)"
+
+# Starship prompt
+eval "$(starship init zsh)"
+
+## thefuck
+eval $(thefuck --alias heck)
