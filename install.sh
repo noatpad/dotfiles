@@ -55,29 +55,33 @@ brew install "libdnet"
 brew install "libksba"
 brew install "libyaml"
 brew install "lolcat"
-brew install "mackup"
 brew install "m-cli"
 brew install "mas"
 brew install "micro"
 brew install "mono"
 brew install "neofetch"
 brew install "node"
+brew install "openssl"
 brew install "pandoc"
 brew install "pipes-sh"
+brew install "pipx"
 brew install "pylibpcap"
-brew install "python@3.8"
+brew install "pyenv"
+brew install "readline"
 brew install "ruby"
 brew install "ruby-build"
 brew install "sl"
 brew install "sphinx-doc"
+brwe install "sqlite3"
 brew install "starship"
 brew install "swi-prolog"
 brew install "thefuck"
+brew install "xz"
 brew install "youtube-dl"
+brew install "zlib"
 brew install "zoxide"
 brew install "zsh"
 brew install "zsh-syntax-highlighting"
-brew install "mongodb/brew/mongodb-community"
 
 # Install MacOS apps from cask & App Store when prompted
 read -p "Do you want to install MacOS apps from cask & the App Store? ([y]/n) " -n 1
@@ -185,13 +189,9 @@ npm i -g nodemon
 npm i -g npm-check
 npm i -g surge
 npm i -g tldr
-npm i -g trash-cli
 npm i -g vercel
-
-# Restore mackup settings
-ln -svf ~/.dotfiles/mackup.cfg ~/.mackup.cfg
-mackup restore
 
 # Link and copy dotfiles
 cp ~/.dotfiles/gitconfig ~/.gitconfig
+ln -svf ~/.dotfiles/zsh/zprofile ~/.zprofile
 ln -svf ~/.dotfiles/zsh/zshrc ~/.zshrc

@@ -1,12 +1,10 @@
 # ZSH/Shell
-alias zshrc="open ~/.zshrc"
 alias refresh="source ~/.zshrc"
 alias omz="open ~/.oh-my-zsh"
 alias cd="z"
 alias cdi="zi"
 alias e="exa -G --icons --group-directories-first"
 alias el="exa -l --icons --header --group-directories-first"
-alias rm="trash"
 
 # Brew
 alias brews="brew list -1"
@@ -16,7 +14,7 @@ alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor"
 alias npmg="npm i -g"
 alias npms="npm ls -g -depth 0"
 alias npmcheck="npm-check"
-alias npmgup="npm-check -gu"
+alias npmup="npm-check -u"
 
 # Git
 alias g="git"

@@ -1,0 +1,4 @@
+echo 'eval "$(pyenv init --path)"' >> ~/.zprofileeval "$(pyenv init --path)"
+
+# Created by `pipx` on 2021-07-31 17:24:38
+export PATH="$PATH:/Users/Danny/.local/bin"

@@ -1,5 +1,6 @@
 # PATH
 export PATH="/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/sbin:/opt/local/bin"
+export PATH="$PATH:/Users/Danny/.local/bin"
 # export PATH="$PATH:~/mongodb-osx-x86_64-enterprise-4.0.6/bin"
 
 # Environment
@@ -9,6 +10,9 @@ export STARSHIP_CONFIG="~/.starship"
 
 # List contents whenever you change directory
 function chpwd() { exa -G --icons --group-directories-first }
+
+# Pyenv
+eval "$(pyenv init --path)"
 
 # Zoxide
 eval "$(zoxide init zsh)"

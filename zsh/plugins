@@ -1,9 +1,12 @@
 plugins=(
 	alias-tips
 	colored-man-pages
+	git
+	gitfast
 	hacker-quotes
 	httpie
 	last-working-dir
+	poetry
 	nvm
 	vscode
 	zsh-autosuggestions
