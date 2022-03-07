@@ -3,6 +3,4 @@ export DOT="$HOME/.dotfiles/zsh"
 
 source $DOT/config
 source $DOT/plugins
-source $DOT/alias
-
 source $ZSH/oh-my-zsh.sh

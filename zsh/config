@@ -1,4 +1,5 @@
-# PATH
+## ENV VARS
+# Path
 export PATH="/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/sbin:/opt/local/bin"
 export PATH="$PATH:/Users/Danny/.local/bin"
 # export PATH="$PATH:~/mongodb-osx-x86_64-enterprise-4.0.6/bin"
@@ -8,9 +9,53 @@ export EDITOR="/usr/local/bin/micro"
 export VISUAL="/usr/local/bin/micro"
 export STARSHIP_CONFIG="~/.starship"
 
-# List contents whenever you change directory
-function chpwd() { exa -G --icons --group-directories-first }
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+
+## ALIASES 
+# ZSH/Shell
+alias refresh="source ~/.zshrc"
+alias omz="open ~/.oh-my-zsh"
+alias cd="z"
+alias cdi="zi"
+alias e="env COLUMNS=100 exa --icons --group-directories-first"
+alias el="e --long --icons --header"
+alias et="e --tree"
+alias ls="e"
+alias ll="el"
+alias lt="et"
+
+# Brew
+alias brews="brew list -1"
+alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor"
+
+# NPM
+alias npmg="npm i -g"
+alias npms="npm ls -g -depth 0"
+alias npmcheck="npm-check"
+alias npmup="npm-check -u"
+
+# Git
+alias g="git"
+alias ga="git add"
+alias gco="git checkout"
+alias gl="git pull"
+alias gp="git push"
+alias gm="git merge"
+alias gs="git status"
+alias gst="git stash"
+
+# Misc
+alias cht="curl https://cht.sh"
+alias paths="echo $PATH | tr -s ':' '\n'"
+alias starwars="nc towel.blinkenlights.nl 23"
+alias myip="curl ifconfig.co"
+
+## SETUP
 # Pyenv
 eval "$(pyenv init --path)"
 
@@ -22,3 +67,10 @@ eval "$(starship init zsh)"
 
 ## thefuck
 eval $(thefuck --alias heck)
+
+# nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# List contents whenever you change directory
+function chpwd() { e }

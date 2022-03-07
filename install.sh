@@ -19,87 +19,17 @@ fi
 
 # Install brew packages (and node along with it)
 cd ~/.dotfiles
-brew tap "dart-lang/dart"
-brew tap "homebrew/bundle"
-brew tap "homebrew/cask"
-brew tap "homebrew/core"
-brew tap "homebrew/services"
-brew tap "jhawthorn/fzy"
-brew tap "kkevinm/itunes-discord-rp"
-brew tap "mongodb/brew"
-
-brew install "automake"
-brew install "bat"
-brew install "python@3.9"
-brew install "glib"
-brew install "cairo"
-brew install "catimg"
-brew install "coreutils"
-brew install "exa"
-brew install "gnutls"
-brew install "harfbuzz"
-brew install "libass"
-brew install "ffmpeg"
-brew install "fswatch"
-brew install "fzf"
-brew install "gh"
-brew install "gifsicle"
-brew install "git-lfs"
-brew install "gnu-sed"
-brew install "httpie"
-brew install "imagemagick"
-brew install "libimobiledevice"
-brew install "ios-webkit-debug-proxy"
-brew install "iproute2mac"
-brew install "libdnet"
-brew install "libksba"
-brew install "libyaml"
-brew install "lolcat"
-brew install "m-cli"
-brew install "mas"
-brew install "micro"
-brew install "mono"
-brew install "neofetch"
-brew install "node"
-brew install "openssl"
-brew install "pandoc"
-brew install "pipes-sh"
-brew install "pipx"
-brew install "pylibpcap"
-brew install "pyenv"
-brew install "readline"
-brew install "ruby"
-brew install "ruby-build"
-brew install "sl"
-brew install "sphinx-doc"
-brwe install "sqlite3"
-brew install "starship"
-brew install "swi-prolog"
-brew install "thefuck"
-brew install "xz"
-brew install "youtube-dl"
-brew install "zlib"
-brew install "zoxide"
-brew install "zsh"
-brew install "zsh-syntax-highlighting"
+brew bundle
 
 # Install MacOS apps from cask & App Store when prompted
 read -p "Do you want to install MacOS apps from cask & the App Store? ([y]/n) " -n 1
 if [[ ! $REPLY =~ ^[Nn]$ ]]
 then
-	brew tap "homebrew/cask-fonts"
-
-	brew install --cask "font-hack-nerd-font"
-	brew install --cask "qlcolorcode"
-	brew install --cask "qlstephen"
-	brew install --cask "xquartz"
-	
 	brew install --cask "1password"
 	brew install --cask "8bitdo-ultimate-software"
 	brew install --cask "aerial"
-	# brew install --cask "alfred"
+	brew install --cask "alfred"
 	brew install --cask "appcleaner"
-	brew install --cask "google-photos-backup-and-sync"
 	brew install --cask "bartender"
 	brew install --cask "bitwarden"
 	# brew install --cask "boom-3d"
@@ -108,15 +38,12 @@ then
 	brew install --cask "discord"
 	brew install --cask "dockey"
 	brew install --cask "dolphin"
-	brew install --cask "enjoyable"
 	brew install --cask "etrecheckpro"
 	# brew install --cask "fantastical"
 	brew install --cask "firefox"
 	brew install --cask "flux"
 	brew install --cask "google-chrome"
 	brew install --cask "iterm2"
-	brew install --cask "itunesdiscordrp"
-	brew install --cask "kap"
 	brew install --cask "kdiff3"
 	brew install --cask "keycastr"
 	# brew install --cask "loopback"
@@ -132,7 +59,6 @@ then
 	brew install --cask "openemu"
 	brew install --cask "opentoonz"
 	brew install --cask "parsec"
-	# brew install --cask "path-finder"
 	brew install --cask "postman"
 	brew install --cask "securesafe"
 	brew install --cask "sf-symbols"
@@ -150,7 +76,6 @@ then
 	
 	# - Missing apps:
 	# Audacity
-	# BandagedBD
 	# Clip Studio (and Clip Studio Paint)
 	# CZUR Scanner
 	# DaVinci Resolve
@@ -159,13 +84,10 @@ then
 	# Feeds (or any RSS feed reader)
 	# Filezilla
 	# GameMaker Studio
-	# Microsoft Office
 	# Pureref
 	# SanicBall
 	# Sonic Robo Blast 2 Kart
 	# Tayasui Sketches Pro
-	
-	brew bundle --file Caskfile
 fi
 
 # Install nvm if necessary
