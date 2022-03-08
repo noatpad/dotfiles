@@ -1,14 +1,13 @@
 plugins=(
 	alias-tips
+	asdf
 	colored-man-pages
+	# fzf-zsh-plugin
 	git
 	gitfast
 	hacker-quotes
 	httpie
 	last-working-dir
-	poetry
-	pyenv
-	nvm
 	vscode
 	zsh-autosuggestions
 	zsh-syntax-highlighting
