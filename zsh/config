@@ -7,8 +7,9 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$WINHOME/Users/Danny/AppData/Local/Programs/Microsoft VS Code/bin"
 
 # Environment
-export EDITOR="/usr/local/bin/micro"
-export VISUAL="/usr/local/bin/micro"
+NVIM="/usr/bin/nvim"
+export EDITOR=$NVIM
+export VISUAL=$NVIM
 export STARSHIP_CONFIG="~/.starship"
 
 ## ALIASES

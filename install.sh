@@ -33,6 +33,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.1
 
 # Install packages
+sudo apt install bat
 sudo apt install exa
 sudo apt install ffmpeg
 sudo apt install gh
@@ -47,6 +48,10 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"  # starship
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl  # youtube-dl
 curl -sS https://webinstall.dev/zoxide | bash   # zoxide
 
+# Prepare bat
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+
 sudo apt-get install make build-essential libssl-dev zlib1g-dev \
 libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
 libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev		# Necessary components to compile for Python
@@ -56,4 +61,5 @@ libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-d
 
 # Prepare data and symlinks
 cp gitconfig ~/.gitconfig
-ln -sf ~/.zshrc ./zsh/zshrc
+ln -svf ~/.dotfiles/zsh/zshrc ~/.zshrc 
+ln -svf ~/.dotfiles/nvim/init.lua ~/.config/nvim/init.lua
