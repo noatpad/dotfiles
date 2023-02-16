@@ -1,7 +1,10 @@
 ## ENV VARS
 # Path
+export WINHOME="/mnt/c"
+export WINDAN="$WINHOME/Users/Danny"
 export PATH="/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/sbin:/opt/local/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$WINHOME/Users/Danny/AppData/Local/Programs/Microsoft VS Code/bin"
 
 # Environment
 export EDITOR="/usr/local/bin/micro"
@@ -42,6 +45,7 @@ alias gst="git stash"
 alias paths="echo $PATH | tr -s ':' '\n'"
 alias starwars="nc towel.blinkenlights.nl 23"
 alias myip="curl ifconfig.co"
+# alias love="/mnt/c/Program\ Files/LOVE/love.exe ."
 
 ## SETUP
 # Zoxide
@@ -52,3 +56,14 @@ eval "$(starship init zsh)"
 
 # List contents whenever you change directory
 function chpwd() { e }
+
+## FUNCTIONS
+# Quick cheat.sh command
+function cheat { curl cheat.sh/$1 }
+
+# Convert a video to a GIF easily
+function vid2gif {
+	ffmpeg -i $1 -vf "fps=${3:-24},scale=${4:-320}:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 $2
+	gifsicle -O3 -b $2
+	
+}
