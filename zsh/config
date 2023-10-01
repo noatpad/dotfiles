@@ -46,7 +46,6 @@ alias gst="git stash"
 alias paths="echo $PATH | tr -s ':' '\n'"
 alias starwars="nc towel.blinkenlights.nl 23"
 alias myip="curl ifconfig.co"
-# alias love="/mnt/c/Program\ Files/LOVE/love.exe ."
 
 ## SETUP
 # Zoxide
@@ -66,5 +65,4 @@ function cheat { curl cheat.sh/$1 }
 function vid2gif {
 	ffmpeg -i $1 -vf "fps=${3:-24},scale=${4:-320}:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 $2
 	gifsicle -O3 -b $2
-	
 }
